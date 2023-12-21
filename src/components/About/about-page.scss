@@ -1,0 +1,65 @@
+@import "../../styles/partials/core-imports";
+
+main.about-page {
+    margin-bottom: 4rem;
+
+    .flex-container {
+        display: flex;
+
+        h2 {
+            margin-top: 0;
+        }
+
+        img {
+            margin-top: 1.5rem;
+            max-width: 100%;
+            border: 5px solid black;
+        }
+
+        .left,
+        .right {
+            width: 50%;
+
+            p {
+                width: 80%;
+                font-size: .8rem;
+            }
+        }
+    }
+
+    @include for-tablet-down {
+        .flex-container {
+            flex-direction: column;
+
+            img {
+                max-width: 100%;
+            }
+
+            .left {
+                margin-bottom: 2rem;
+            }
+
+            .left,
+            .right {
+                width: 100%;
+
+                p {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    @include for-mobile {
+        .flex-container {
+
+            .left,
+            .right {
+
+                p {
+                    font-size: .85rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "kim-gatsby-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Source code for https://kimstair.dev",
+  "author": "kim",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.14",
+    "@visx/wordcloud": "^3.3.0",
+    "gatsby": "^5.11.0",
+    "gatsby-plugin-google-gtag": "^5.11.0",
+    "gatsby-plugin-image": "^3.13.0",
+    "gatsby-plugin-manifest": "^5.11.0",
+    "gatsby-plugin-sass": "^6.11.0",
+    "gatsby-plugin-sharp": "^5.13.0",
+    "gatsby-plugin-sitemap": "^6.11.0",
+    "gatsby-source-filesystem": "^5.13.0",
+    "gatsby-transformer-sharp": "^5.11.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "sass": "^1.65.1"
+  }
+}

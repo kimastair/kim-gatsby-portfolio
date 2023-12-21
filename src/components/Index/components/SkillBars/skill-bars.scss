@@ -1,0 +1,73 @@
+@import "../../../../styles/partials/core-imports";
+
+.skill-bars {
+    // display: flex;
+    // flex-direction: column;
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-items: center;
+    padding-left: 0;
+    margin-bottom: 0;
+    width: 90%;
+
+    .skill,
+    .footer {
+        // list-style-type: none;
+        // display: flex;
+        // align-items: center;
+        display: contents;
+    }
+
+    // .name,
+    // .bar-container,
+    // .footer .spacer,
+    // .footer .text-container {
+    //     // flex: 1;
+    // }
+
+    .name {
+        align-self: flex-start;
+        padding-right: 2rem;
+        font-size: .8rem;
+    }
+
+    .footer,
+    .bar .years {
+        font-family: $font-family-small;
+        font-size: .7rem;
+    }
+
+    .bar-container {
+        flex-grow: 1;
+
+        .bar {
+            background-color: lighten($color-dark-teal, 35%);
+            height: 100%;
+            border: 1px solid black;
+
+            span {
+                display: block;
+                margin-left: 4px;
+                color: $color-black;
+                font-weight: bold;
+            }
+        }
+    }
+
+    @include for-tablet-down {
+        width: 90%;
+    }
+
+    @include for-mobile {
+        width: 100%;
+
+        .name {
+            font-size: 1rem;
+        }
+
+        .footer,
+        .bar .years {
+            font-size: .9rem;
+        }
+    }
+}

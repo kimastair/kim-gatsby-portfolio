@@ -1,0 +1,208 @@
+@import "../../../../../styles/partials/core-imports";
+
+.menu {
+    position: fixed;
+    min-height: calc(100vh - $header-height-mobile-menu);
+    width: 100vw;
+    transition: none;
+
+    video {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        background-color: $layout-color-mobile-menu-bg;
+    }
+
+    .menu-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .nav-container {
+            width: 100vw;
+
+            .nav-flex-item {
+                background-color: $layout-color-bg;
+                margin-top: 2rem;
+                padding: 0 $page-left-right-spacing-mobile;
+                border-top: 3px solid $color-yellow;
+                border-bottom: 3px solid $color-yellow;
+            }
+        }
+
+        nav a {
+            font-size: 2rem;
+            font-family: $font-family-small;
+            letter-spacing: .2rem;
+            margin: 1rem 0;
+            border-bottom: 3px solid transparent;
+            display: block;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: none;
+            -webkit-tap-highlight-color: transparent;
+
+
+            &:focus {
+                outline: none;
+                border-bottom-color: $font-color-a-hover;
+            }
+
+            svg {
+                font-size: 2.5rem;
+            }
+        }
+
+        .connect {
+            margin: auto;
+
+            a {
+                margin-left: 0;
+                margin-right: 2rem;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                svg {
+                    font-size: 3rem;
+
+                    &:hover {
+                        transform: none;
+                    }
+                }
+            }
+        }
+    }
+
+    // animations when opening
+    $menu-translate-open: 1s;
+    $menu-opacity-open: 1s;
+
+    &.opening {
+        display: flex;
+        opacity: 0;
+
+        .menu-content {
+
+            .nav-container,
+            .connect {
+                opacity: 0;
+            }
+
+            nav a {
+                opacity: 0;
+            }
+        }
+
+    }
+
+    &.open {
+        opacity: 1;
+        transform: translateX(0px);
+
+        video {
+            opacity: 0%;
+            transition: opacity 1s ease-in;
+        }
+
+        .menu-content {
+
+            .nav-container,
+            .connect {
+                opacity: 1;
+            }
+
+            nav a {
+                opacity: 1;
+            }
+
+            $opacity-transition-function: ease-in;
+            $opacity-transition-delay: .15s;
+
+
+            nav div:first-child a {
+                transition: opacity .25s $opacity-transition-function;
+            }
+
+            nav div:nth-child(2) a {
+                transition: opacity .25s $opacity-transition-function calc($opacity-transition-delay);
+            }
+
+            nav div:nth-child(3) a {
+                transition: opacity .25s $opacity-transition-function calc($opacity-transition-delay*2);
+            }
+        }
+    }
+
+    // animations when closing
+    $menu-translate-closed: .4s;
+
+    &.closing {
+        // transform: translateX(101vh);
+        opacity: 0;
+        background-color: $color-black;
+        z-index: 50;
+        transition: transform $menu-translate-closed ease-in, opacity calc($menu-translate-closed/2) ease-out;
+
+        video {
+            opacity: 0%;
+            transition-delay: .2s;
+        }
+
+        .menu-content {
+
+            .nav-container,
+            .connect {
+                opacity: 0;
+            }
+
+            nav a {
+                opacity: 0;
+            }
+        }
+    }
+
+    &.closed {
+        display: none;
+    }
+
+    @include for-tablet-portrait-down {
+        display: flex;
+    }
+
+    @include for-tiny-mobile {
+        .menu-content {
+            justify-content: flex-start;
+
+            .nav-container {
+
+                .nav-flex-item {
+                    margin-top: 2rem;
+                }
+            }
+
+            nav a {
+                font-size: 1.5rem;
+
+                svg {
+                    font-size: 2rem;
+                }
+            }
+
+            .connect {
+                margin: 2rem auto;
+
+                a svg {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+}

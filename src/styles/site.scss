@@ -1,0 +1,141 @@
+@import "./partials/core-imports";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: $font-family-default;
+    font-size: 20px;
+
+    @include for-tablet {
+        font-size: 18px;
+    }
+
+    @include for-mobile {
+        font-size: 16px;
+    }
+}
+
+body {
+    margin: 0;
+    color: $font-color-body;
+    background-color: $layout-color-bg;
+    line-height: 1.5;
+    letter-spacing: .02rem;
+}
+
+img,
+svg {
+    vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+label {
+    color: $font-color-header;
+    font-weight: normal;
+}
+
+h1 {
+    @include for-tablet-portrait-down {
+        margin-top: 0;
+    }
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+p {
+    font-family: $font-family-small;
+}
+
+a {
+    font-size: .72rem;
+    font-family: $font-family-small;
+    color: $font-color-a;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover {
+        color: $font-color-a-hover;
+    }
+
+    &:focus {
+        @extend %focus-outline;
+    }
+
+    &.icon {
+        display: inline-flex;
+        font-size: .8rem;
+        align-items: center;
+
+        span {
+            padding-right: 5px;
+        }
+
+        svg {
+            font-size: 1.2rem;
+        }
+    }
+
+    &.btn {
+        @extend %button-styles;
+    }
+
+    // @include for-mobile {
+    //     &.icon {
+    //         font-size: .9rem;
+    //     }
+    // }
+}
+
+@include for-tablet-down {
+    h2 {
+        margin: 4rem 0 1.5rem 0;
+        padding-bottom: .5rem;
+        font-size: 1.5rem;
+        border-bottom: 1px solid;
+    }
+
+    a.icon {
+        font-size: .9rem;
+    }
+}
+
+.show-desktop-only {
+    @include for-tablet-down {
+        display: none;
+    }
+}
+
+.show-tablet-only {
+    @include for-mobile {
+        display: none;
+    }
+
+    @include for-desktop {
+        display: none;
+    }
+}
+
+.show-mobile-only {
+    @include for-tablet {
+        display: none;
+    }
+
+    @include for-desktop {
+        display: none;
+    }
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
