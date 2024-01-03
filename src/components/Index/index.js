@@ -21,7 +21,12 @@ const IndexPage = () => {
                         A senior frontend engineer building accessible, performant, beautiful experiences for the web.
                     </p>
                     <div className="img-container">
-                        <StaticImage className="img-me" src="../../images/cartoon-me.png" alt="Kim Stair" />
+                        <StaticImage
+                            className="img-me"
+                            objectFit="contain"
+                            objectPosition="0% 50%"
+                            src="../../images/cartoon-me.png"
+                            alt="Kim Stair" />
                     </div>
                     <div>
                         <a className="resume-link icon btn" href={`/documents/KimStairSrEngineerFE.docx?${Date.now()}`}><span>Resume</span><DownloadIcon /></a>

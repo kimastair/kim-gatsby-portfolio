@@ -41,11 +41,12 @@ main.index-page {
 
         .img-container {
             min-height: 0;
-            display: flex;
+            display: block;
             background-color: $color-dark-teal;
             border: 5px solid black;
+            max-width: 40vh;
 
-            img {
+            .img-me {
                 min-height: 0;
                 display: flex;
                 max-height: 100%;
@@ -68,6 +69,16 @@ main.index-page {
         }
     }
 
+    @media (min-width: $vp-desktop) and (max-height: 800px) {
+        .left {
+            .flex-container {
+                .img-container {
+                    display: none;
+                }
+            }
+        }
+    }
+
     @include for-tablet-down {
         margin-bottom: 2rem;
         flex-direction: column;
@@ -85,11 +96,11 @@ main.index-page {
                 height: auto;
 
                 .intro {
-                    width: 77%;
+                    width: 60%;
                 }
 
                 .img-container {
-                    width: 60%;
+                    width: 40vh;
                 }
             }
         }

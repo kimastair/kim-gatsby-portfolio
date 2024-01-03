@@ -15,6 +15,10 @@ html {
     @include for-mobile {
         font-size: 16px;
     }
+
+    @include for-tiny-mobile {
+        font-size: 14px;
+    }
 }
 
 body {
@@ -84,12 +88,6 @@ a {
     &.btn {
         @extend %button-styles;
     }
-
-    // @include for-mobile {
-    //     &.icon {
-    //         font-size: .9rem;
-    //     }
-    // }
 }
 
 @include for-tablet-down {

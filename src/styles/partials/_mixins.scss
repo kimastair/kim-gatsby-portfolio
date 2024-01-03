@@ -1,36 +1,44 @@
+$vp-desktop: 1200px;
+$vp-tablet-max: calc($vp-desktop - 1px);
+$vp-tablet-min: 600px;
+$vp-tablet-portrait-max: 900px;
+$vp-mobile-max: 600px;
+$vp-tiny-mobile-max: 330px;
+
+
 // RESPONSIVE
 @mixin for-desktop {
-    @media (min-width: 1200px) {
+    @media (min-width: $vp-desktop) {
         @content;
     }
 }
 
 @mixin for-tablet {
-    @media (min-width: 600px) and (max-width: 1199px) {
+    @media (min-width: $vp-tablet-min) and (max-width: $vp-tablet-max) {
         @content;
     }
 }
 
 @mixin for-tablet-down {
-    @media (max-width: 1199px) {
+    @media (max-width: $vp-tablet-max) {
         @content;
     }
 }
 
 @mixin for-tablet-portrait-down {
-    @media (max-width: 899px) {
+    @media (max-width: $vp-tablet-portrait-max) {
         @content;
     }
 }
 
 @mixin for-mobile {
-    @media (max-width: 599px) {
+    @media (max-width: $vp-mobile-max) {
         @content;
     }
 }
 
 @mixin for-tiny-mobile {
-    @media (max-width: 329px) {
+    @media (max-width: $vp-tiny-mobile-max) {
         @content;
     }
 }
