@@ -9,7 +9,8 @@
         animation: fade-out 500ms forwards;
     }
 
-    &.menu-open main {
+    &.menu-open main,
+    &.menu-closing main {
         display: none;
     }
 

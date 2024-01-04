@@ -19,6 +19,7 @@
     "@mui/icons-material": "^5.14.14",
     "@visx/wordcloud": "^3.3.0",
     "gatsby": "^5.11.0",
+    "gatsby-plugin-fix-fouc": "^1.0.5",
     "gatsby-plugin-google-gtag": "^5.11.0",
     "gatsby-plugin-image": "^3.13.0",
     "gatsby-plugin-manifest": "^5.11.0",

@@ -26,7 +26,8 @@ const IndexPage = () => {
                             objectFit="contain"
                             objectPosition="0% 50%"
                             src="../../images/cartoon-me.png"
-                            alt="Kim Stair" />
+                            alt="Kim Stair"
+                            loading="eager" />
                     </div>
                     <div>
                         <a className="resume-link icon btn" href={`/documents/KimStairSrEngineerFE.docx?${Date.now()}`}><span>Resume</span><DownloadIcon /></a>

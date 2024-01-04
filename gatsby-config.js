@@ -7,7 +7,7 @@ module.exports = {
     description: `Senior frontend engineer building accessible, performant, beautiful experiences for the web.`,
     siteUrl: `https://kimstair.dev`
   },
-  plugins: ["gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-sitemap", {
+  plugins: ["gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-fix-fouc", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "src/images/icon.png"
