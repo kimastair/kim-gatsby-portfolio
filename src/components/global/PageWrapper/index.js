@@ -26,10 +26,10 @@ export default function PageWrapper({ children }) {
 
   return (
     <StrictMode>
-      <div className="page-wrapper">
+      <div className={`page-wrapper menu-${menuState}`}>
         <Header menuState={menuState} openCloseMenu={openCloseMenu} />
         <Menu menuState={menuState} openCloseMenu={openCloseMenu} />
-        {menuClosed && children}
+        {children}
       </div>
     </StrictMode>
   )

@@ -9,6 +9,10 @@
         animation: fade-out 500ms forwards;
     }
 
+    &.menu-open main {
+        display: none;
+    }
+
     .nav {
         display: flex;
         justify-content: space-between;
