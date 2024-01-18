@@ -1,8 +1,6 @@
 @import "../../../../styles/partials/core-imports";
 
 .skill-bars {
-    // display: flex;
-    // flex-direction: column;
     display: grid;
     grid-template-columns: max-content auto;
     align-items: center;
@@ -12,18 +10,8 @@
 
     .skill,
     .footer {
-        // list-style-type: none;
-        // display: flex;
-        // align-items: center;
         display: contents;
     }
-
-    // .name,
-    // .bar-container,
-    // .footer .spacer,
-    // .footer .text-container {
-    //     // flex: 1;
-    // }
 
     .name {
         align-self: flex-start;
