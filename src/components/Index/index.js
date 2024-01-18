@@ -30,7 +30,7 @@ const IndexPage = () => {
                             loading="eager" />
                     </div>
                     <div>
-                        <a className="resume-link icon btn" href={`/documents/KimStairSrEngineerFE.docx?${Date.now()}`}><span>Resume</span><DownloadIcon /></a>
+                        <a className="resume-link icon btn" href={`/documents/Kim Stair - Senior UX Engineer.pdf?${Date.now()}`}><span>Resume</span><DownloadIcon /></a>
                     </div>
                 </div>
             </section>
