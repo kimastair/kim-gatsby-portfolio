@@ -1,7 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
-const CustomHead = (props) => {
-    let title = props?.title;
+const CustomHead = ({ title = 'Kim Stair: Frontend Engineer' }) => {
     return (
         <>
             <html lang="en" />
@@ -10,5 +10,9 @@ const CustomHead = (props) => {
         </>
     )
 }
+
+CustomHead.propTypes = {
+    title: PropTypes.string,
+};
 
 export default CustomHead

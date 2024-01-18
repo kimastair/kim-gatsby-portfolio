@@ -1,15 +1,17 @@
 import * as React from "react"
+import PropTypes from 'prop-types';
 import { Link } from "gatsby"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward'
 import experiences from "../../../data/work-history.json"
 import "./experience-boxes.scss"
 
-const ExperienceBoxes = (props) => {
+const ExperienceBoxes = ({ isHome = false }) => {
+
   let BoxLink, HeaderIcon, jobDescriptionKey, experienceData
 
   // configure component display differences between home and experience pages
-  if (props.isHome) {
+  if (isHome) {
     BoxLink = () =>
       <Link className="box-link" to={`/experience`}>
         <span className="sr-only">View more details on my work experience page</span>
@@ -52,5 +54,9 @@ const ExperienceBoxes = (props) => {
     </div>
   )
 }
+
+ExperienceBoxes.propTypes = {
+  isHome: PropTypes.bool,
+};
 
 export default ExperienceBoxes
