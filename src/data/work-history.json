@@ -8,13 +8,14 @@
         },
         "showOnHome": true,
         "summary": [
-            "Modernized and built new features in React on the American Express cardholder log-in landing page (50 million views/month) and the benefits dashboard page (3 million views/month)",
-            "Offered on-boarding, mentorship, demos, ran weekly frontend syncs, detailed and tracked tech roadmap initiatives"
+            "Supported the frontend team with onboarding, mentorship, code reviews, and product demos, ran weekly frontend syncs and group brainstorming sessions, detailed and tracked dozens of tech roadmap initiatives",
+            "Modernized and shipped new features in React on the American Express cardholder log-in landing page (50 million views/month) and the benefits dashboard page (3 million views/month) acting as a trusted advisor to product owners and graphic design teams"
         ],
         "description": [
-            "Modernized and built new features in React on the American Express cardholder log-in landing page (50 million views/month) and the benefits dashboard page (3 million views/month)",
-            "Offered on-boarding, mentorship, demos, ran weekly frontend syncs, detailed and tracked tech roadmap initiatives",
-            "Implemented Storybook on multiple repos and championed its use across the company in organization-wide demos to solve pain points around UI documentation and previewing hard-to-reach logged-in user scenarios"
+            "Supported the frontend team with onboarding, mentorship, code reviews, and product demos, ran weekly frontend syncs and group brainstorming sessions, detailed and tracked dozens of tech roadmap initiatives",
+            "Modernized and shipped new features in React on the American Express cardholder log-in landing page (50 million views/month) and the benefits dashboard page (3 million views/month) acting as a trusted advisor to product owners and graphic design teams",
+            "Implemented Storybook on multiple repos and championed its use across the company in organization-wide demos to solve pain points around documentation and viewing hard-to-reach logged-in user scenarios, building an innovative Storybook plug-in custom-tailored for working with Amex proprietary tech",
+            "Worked with backend, product design, and product owner teams to consolidate over 20 discrete API benefit progress notifiers into a single frontend module"
         ],
         "urls": {
             "anchor": "amex",
@@ -42,13 +43,14 @@
         },
         "showOnHome": true,
         "summary": [
-            "Led the frontend team in a greenfield project for a new game developer marketing initiative at Microsoft Xbox",
-            "Leveraged ReactJS, Gatsby, MS Flow + Azure to create a seamless custom SharePoint authoring experience for the marketing team to publish to staging and production"
+            "Led the frontend team in an innovative greenfield project for a new game developer marketing initiative at Microsoft Xbox shipping a game-centric site with a modern, unique, and highly animated graphic design",
+            "Leveraged ReactJS, Gatsby, MS Flow + Azure to create a seamless custom automated SharePoint authoring experience and build system for the marketing team to publish list items to staging and production"
         ],
         "description": [
-            "Led the frontend team in a greenfield project for a new game developer marketing initiative at Microsoft Xbox",
-            "Leveraged ReactJS, Gatsby, MS Flow + Azure to create a seamless custom SharePoint authoring experience for the marketing team to publish to staging and production",
-            "Created best practices, managed accessibility and privacy compliance, working closely with design and product teams for feature development"
+            "Led the frontend team in an innovative greenfield project for a new game developer marketing initiative at Microsoft Xbox shipping a game-centric site with a modern, unique, and highly animated graphic design",
+            "Leveraged ReactJS, Gatsby, MS Flow + Azure to create a seamless custom automated SharePoint authoring experience and build system for the marketing team to publish list items to staging and production",
+            "Created best practices, managed accessibility and privacy compliance, working closely with design and product teams for feature development",
+            "Worked with a small team of frontend engineers to review prototypes, create requirements, and articulate roadmap initiatives for the Xbox Design System component library"
         ],
         "urls": {
             "anchor": "msxbox",
@@ -61,6 +63,7 @@
             "SCSS",
             "Git",
             "Azure DevOps",
+            "Design systems",
             "GraphQL",
             "Sketch",
             "Dynamics 365",
@@ -78,10 +81,10 @@
             "end": "Dec 2017"
         },
         "description": [
-            "Built an urgently needed single-page application with React.js that serves up legal forms for HomeAway hosts to register with their cities to continue providing short-term rentals to travelers legally",
-            "Owned design implementation, feature development, application support, and collaborated with various teams to integrate our new pages into the larger site",
-            "Developed a component-driven configuration system to allow for dynamic (JSON generated) output of different versions of the forms based upon the user's district to be rolled out worldwide for hundreds of districts",
-            "Worked with product management, design, and developer teams in an Agile environment, participating in the resolution of production issues and leading frontend efforts toward solutions"
+            "Built an urgently needed single-page application with React.js in under 2 months to populate legal forms for HomeAway hosts to continue providing short-term rentals to travelers legally",
+            "Owned visual design implementation, frontend feature development, application support, working closely with multiple teams to quickly integrate our new pages into the larger site - winning a company award for outstanding cross-team collaboration",
+            "Developed a component-driven configuration system to query for requirements and render dynamic (JSON generated) output of different versions of the forms based upon the user's district to be rolled out worldwide for hundreds of districts",
+            "Worked with product management, design, and developer teams in an Agile environment, leading frontend efforts in the troubleshooting and resolution of production issues and the release of new features"
         ],
         "urls": {
             "anchor": "homeaway",
@@ -93,6 +96,7 @@
             "Git",
             "JavaScript",
             "HTML",
+            "Design systems",
             "Jenkins",
             "InVision",
             "Agile"
@@ -106,9 +110,9 @@
             "end": "Nov 2016"
         },
         "description": [
-            "Managed all frontend code for the Windows App Store developer workflow for a redesign and migration from ASP.NET to Angular",
-            "Created and documented a Bootstrap-based design system with one other developer to align with Microsoft design thinking as an effort to centralize all http://microsoft.com styling into a single codebase",
-            "Supported a team of 5+ designers and 20+ engineers, ensuring all UI conformed to design expectations and followed best practices for design, web semantics, accessibility, and graceful localization"
+            "Co-created and documented a Bootstrap-based design system to align with Microsoft graphic design guidelines as an effort to centralize all http://microsoft.com styling into a single codebase to be used across hundreds of pages",
+            "Managed the shipping of all frontend code changes for the massive and complex Windows App Store developer workflow during a redesign and migration from ASP.NET to Angular",
+            "Supported a team of 5+ designers and 20+ engineers as an individual contributor and frontend development trainer through documentation and code reviews, exercising immense attention to detail and powers of persuasion to ensure all UX conformed to UI design expectations and followed best practices for web semantics, accessibility, and graceful localization"
         ],
         "urls": {
             "anchor": "msappdev",
@@ -132,9 +136,9 @@
             "end": "Sep 2014"
         },
         "description": [
-            "Created and maintained a wide variety of projects for companies including Microsoft, Gates Foundation, Expedia, and Hawaii Department of Education",
-            "Specialized in radical design customizations to default SharePoint page output",
-            "Led frontend development on all of my projects for the last few years of my role at SMITH"
+            "Specialized in radical visual design customizations to default SharePoint page output for public-facing sites",
+            "Created and maintained a wide range of projects for agency clients, including Microsoft, Gates Foundation, Expedia, and Hawaii Department of Education, leading frontend development on all new projects in the last three years of my role",
+            "Collaborated with visual design, business intelligence, and user research experts to brainstorm feature development"
         ],
         "urls": {
             "anchor": "smith",
@@ -142,7 +146,7 @@
         },
         "skills": [
             "HTML",
-            "CSS3",
+            "CSS",
             "Javascript",
             "C#",
             "Adobe Photoshop",
