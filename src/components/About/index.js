@@ -23,7 +23,7 @@ const AboutPage = () => {
                     <p>
                         I'm incredibly fortunate to live in what (I think) is the most beautiful place on earth. My relaxation comes through exploring the forests and beaches of northwestern Washington. I also enjoy making dinner with friends, playing pool, folk dancing, gardening, and jam sessions of all kinds.
                     </p>
-                    <StaticImage className="img-me" src="../../images/me-forest.jpg" alt="Kim walking through the forest in winter" loading="eager" />
+                    <StaticImage className="img-me" src="../../images/me-forest.jpg" alt="Kim walking through the forest in winter" loading="eager" placeholder="none" />
                 </div>
             </div>
         </main>

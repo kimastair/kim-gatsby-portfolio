@@ -25,6 +25,7 @@ const IndexPage = () => {
                             className="img-me"
                             objectFit="contain"
                             objectPosition="0% 50%"
+                            placeholder="none"
                             src="../../images/cartoon-me.png"
                             alt="Kim Stair"
                             loading="eager" />
