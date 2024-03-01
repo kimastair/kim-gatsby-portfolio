@@ -5,7 +5,8 @@ import Menu from "./components/Menu"
 
 export default function PageWrapper({ children }) {
 
-  // set menu state for "open", "opening", "closing", "closed" - to support both CSS transitionas and a11y non-focus
+  // set menu state for "open", "opening", "closing", "closed"
+  // to support both CSS opacity transitionas and a11y non-focus on hidden page elements
   const [menuState, setMenuState] = useState('closed');
 
   const toggleMenu = (closeMenuOnly) => {

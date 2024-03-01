@@ -1,16 +1,16 @@
 import * as React from "react"
 import CustomHead from "../components/global/CustomHead"
 import PageWrapper from "../components/global/PageWrapper"
-import Page from "../components/Index"
+import IndexPage from "../components/IndexPage"
 
-const IndexPage = () => {
+const IndexPageWrapper = () => {
   return (
     <PageWrapper>
-      <Page />
+      <IndexPage />
     </PageWrapper >
   )
 }
 
-export default IndexPage
+export default IndexPageWrapper
 
 export const Head = () => <CustomHead title="Kim Stair - FE Engineer" />
