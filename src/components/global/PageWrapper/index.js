@@ -13,7 +13,7 @@ export default function PageWrapper({ children }) {
       setMenuState('opening')
       setTimeout(() => {
         setMenuState('open')
-      }, 400);
+      }, 100);
     } else {
       setMenuState('closing')
       setTimeout(() => {
