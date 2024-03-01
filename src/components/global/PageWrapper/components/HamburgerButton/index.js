@@ -1,11 +1,11 @@
 import React from "react"
 import "./hamburger-button.scss"
 
-const HamburgerButton = ({ menuState, openCloseMenu }) => (
+const HamburgerButton = ({ menuState, toggleMenu }) => (
     <button
         className={`hamburger-button ${menuState}`}
         title={menuState === 'open' ? 'open navigation menu' : 'close navigation menu'}
-        onClick={() => openCloseMenu()}
+        onClick={() => toggleMenu()}
         aria-expanded={menuState === 'open'}
         aria-controls="mobile-menu">
         <span></span>

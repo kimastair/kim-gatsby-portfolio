@@ -8,27 +8,25 @@ export default function PageWrapper({ children }) {
   // set menu state for "open", "opening", "closing", "closed" - to support both CSS transitionas and a11y non-focus
   const [menuState, setMenuState] = useState('closed');
 
-  const openCloseMenu = (closeMenuOnly) => {
+  const toggleMenu = (closeMenuOnly) => {
     if (menuState === 'closed' && !closeMenuOnly) {
       setMenuState('opening')
       setTimeout(() => {
         setMenuState('open')
-      }, 100);
+      }, 400);
     } else {
       setMenuState('closing')
       setTimeout(() => {
         setMenuState('closed')
-      }, 100);
+      }, 400);
     }
   }
-
-  const menuClosed = menuState === 'closed';
 
   return (
     <StrictMode>
       <div className={`page-wrapper menu-${menuState}`}>
-        <Header menuState={menuState} openCloseMenu={openCloseMenu} />
-        <Menu menuState={menuState} openCloseMenu={openCloseMenu} />
+        <Header menuState={menuState} toggleMenu={toggleMenu} />
+        <Menu menuState={menuState} toggleMenu={toggleMenu} />
         {children}
       </div>
     </StrictMode>
