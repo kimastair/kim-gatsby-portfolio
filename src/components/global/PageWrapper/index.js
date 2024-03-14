@@ -1,9 +1,10 @@
 import React, { StrictMode, useState } from "react"
+import PropTypes from 'prop-types';
 import "./page-wrapper.scss"
 import Header from "./components/Header"
 import Menu from "./components/Menu"
 
-export default function PageWrapper({ children }) {
+const PageWrapper = ({ children }) => {
 
   // set menu state for "open", "opening", "closing", "closed"
   // to support both CSS opacity transitionas and a11y non-focus on hidden page elements
@@ -33,3 +34,9 @@ export default function PageWrapper({ children }) {
     </StrictMode>
   )
 }
+
+PageWrapper.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+export default PageWrapper
