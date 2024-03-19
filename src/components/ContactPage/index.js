@@ -1,32 +1,35 @@
-import * as React from "react"
-import { navigate } from "gatsby"
-import "./contact-page.scss"
+import * as React from 'react'
+import { navigate } from 'gatsby'
+import './contact-page.scss'
 
+// This component is used to display a contact form
 const ContactPage = () => {
   const handleSubmit = (event) => {
-    event.preventDefault();
+    event.preventDefault()
 
-    const myForm = event.target;
-    const formData = new FormData(myForm);
+    const myForm = event.target
+    const formData = new FormData(myForm)
 
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams(formData).toString(),
     })
-      .then(() => navigate("/success"))
-      .catch((error) => alert(error));
-  };
+      .then(() => navigate('/success'))
+      .catch((error) => alert(error))
+  }
 
   return (
     <main className="contact-page">
       <h1>Contact me</h1>
       <div className="flex-container">
         <div className="left">
-          <form data-netlify="true"
+          <form
+            data-netlify="true"
             name="contact-me"
             method="post"
-            onSubmit={handleSubmit}>
+            onSubmit={handleSubmit}
+          >
             <input type="hidden" name="form-name" value="contact-me" />
             <label htmlFor="name">
               Name
@@ -34,15 +37,30 @@ const ContactPage = () => {
             </label>
             <label htmlFor="email">
               Email
-              <input type="email" name="email" id="email" autoComplete="email" />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                autoComplete="email"
+              />
             </label>
             <label htmlFor="subject">
               Subject
-              <input type="text" name="subject" id="subject" autoComplete="off" />
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                autoComplete="off"
+              />
             </label>
             <label htmlFor="message">
               Message
-              <textarea name="message" id="message" rows="5" autoComplete="off" />
+              <textarea
+                name="message"
+                id="message"
+                rows="5"
+                autoComplete="off"
+              />
             </label>
             <button type="submit">Send</button>
           </form>

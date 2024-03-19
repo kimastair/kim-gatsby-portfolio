@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './hamburger-button.scss'
 
+// This component is used to display a hamburger button for mobile navigation
 const HamburgerButton = ({ menuState, toggleMenu }) => (
   <button
     className={`hamburger-button ${menuState}`}

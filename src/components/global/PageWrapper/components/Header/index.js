@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import logo from '../../../../../images/logo-kim-stair.png'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
@@ -6,6 +7,7 @@ import Connect from '../Connect'
 import './header.scss'
 import HamburgerButton from '../HamburgerButton'
 
+// This component is used to display the header of the site
 const Header = ({ menuState, toggleMenu }) => (
   <>
     <header className={menuState === 'open' ? 'menu-open' : ''}>
@@ -45,5 +47,10 @@ const Header = ({ menuState, toggleMenu }) => (
     </header>
   </>
 )
+
+Header.propTypes = {
+  menuState: PropTypes.string.isRequired,
+  toggleMenu: PropTypes.func.isRequired,
+}
 
 export default Header

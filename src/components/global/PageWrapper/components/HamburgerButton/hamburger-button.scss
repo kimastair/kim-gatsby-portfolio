@@ -1,68 +1,68 @@
-@import "../../../../../styles/partials/core-imports";
+@import '../../../../../styles/partials/core-imports';
 
 .hamburger-button {
-    display: none;
-    width: 60px;
-    height: 45px;
-    position: relative;
-    background-color: transparent;
-    color: transparent;
-    margin: auto 0;
-    border: 0;
+  display: none;
+  width: 60px;
+  height: 45px;
+  position: relative;
+  background-color: transparent;
+  color: transparent;
+  margin: auto 0;
+  border: 0;
 
-    &:focus {
-        @extend %focus-outline;
+  &:focus {
+    @extend %focus-outline;
+  }
+
+  span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: $font-color-a;
+    opacity: 1;
+    left: 0;
+    transition: transform 0.05s ease-in-out;
+
+    &:nth-child(1) {
+      top: 4px;
     }
 
+    &:nth-child(2),
+    &:nth-child(3) {
+      top: 21px;
+    }
+
+    &:nth-child(4) {
+      top: 38px;
+    }
+  }
+
+  &.open {
     span {
-        display: block;
-        position: absolute;
-        height: 3px;
-        width: 100%;
-        background: $font-color-a;
-        opacity: 1;
-        left: 0;
-        transition: transform .05s ease-in-out;
+      &:nth-child(1) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+      }
 
-        &:nth-child(1) {
-            top: 4px;
-        }
+      &:nth-child(2) {
+        transform: rotate(45deg);
+      }
 
-        &:nth-child(2),
-        &:nth-child(3) {
-            top: 21px;
-        }
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+      }
 
-        &:nth-child(4) {
-            top: 38px;
-        }
+      &:nth-child(4) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+      }
     }
+  }
 
-    &.open {
-        span {
-            &:nth-child(1) {
-                top: 18px;
-                width: 0%;
-                left: 50%;
-            }
-
-            &:nth-child(2) {
-                transform: rotate(45deg);
-            }
-
-            &:nth-child(3) {
-                transform: rotate(-45deg);
-            }
-
-            &:nth-child(4) {
-                top: 18px;
-                width: 0%;
-                left: 50%;
-            }
-        }
-    }
-
-    @include for-tablet-portrait-down {
-        display: block;
-    }
+  @include for-tablet-portrait-down {
+    display: block;
+  }
 }

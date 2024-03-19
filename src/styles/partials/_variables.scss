@@ -3,19 +3,23 @@ $color-white: white;
 $color-black: #202020;
 $color-peach: #ffa8a9;
 $color-pink: #f786aa;
-$color-yellow: #E2DE84;
-$color-dark-teal: #31475B;
+$color-yellow: #e2de84;
+$color-dark-teal: #31475b;
 $color-light-teal: lighten($color-dark-teal, 50%); // #b4c6d7
 
 // NAV
 $nav-inner-height: 4.8rem;
 $nav-padding-top: 1.6rem;
-$nav-content-padding-bottom: .8rem;
+$nav-content-padding-bottom: 0.8rem;
 $header-scroll-fade-height: 3.2rem;
-$nav-height: calc($nav-inner-height + $nav-padding-top + $nav-content-padding-bottom);
+$nav-height: calc(
+  $nav-inner-height + $nav-padding-top + $nav-content-padding-bottom
+);
 $header-height: calc($nav-height + $header-scroll-fade-height);
 $header-height-mobile: calc(9rem + $nav-padding-top);
-$header-height-mobile-menu: calc($nav-inner-height + $nav-content-padding-bottom);
+$header-height-mobile-menu: calc(
+  $nav-inner-height + $nav-content-padding-bottom
+);
 
 // LAYOUT
 $page-left-right-spacing: 4.8rem;
@@ -23,8 +27,6 @@ $page-left-right-spacing-mobile: 1rem;
 // // Layout colors
 $layout-color-bg: $color-black;
 $layout-color-mobile-menu-bg: darken($color-dark-teal, 10%);
-;
-
 // FONTS
 // // Font colors
 $font-color-header: $color-yellow;
@@ -37,19 +39,18 @@ $font-color-a-hover: $color-white;
 $font-family-default: 'Alata', sans-serif;
 $font-family-small: 'NotoSans', sans-serif;
 
-
 // ELEMENTS
 // Element state colors
 $element-color-focus-outline: $color-white;
 
 // Misc element styles
 %focus-outline {
-    outline: 2px solid $color-white;
-    outline-offset: 5px;
+  outline: 2px solid $color-white;
+  outline-offset: 5px;
 }
 
 %button-styles {
-    font-size: .8rem;
-    border: 1px solid;
-    padding: 8px 10px;
+  font-size: 0.8rem;
+  border: 1px solid;
+  padding: 8px 10px;
 }

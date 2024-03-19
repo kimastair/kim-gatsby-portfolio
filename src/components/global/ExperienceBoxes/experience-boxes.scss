@@ -1,169 +1,173 @@
-@import "../../../styles/partials/core-imports";
+@import '../../../styles/partials/core-imports';
 
 $box-padding-left: 2.4rem;
-$box-padding-default: .8rem;
+$box-padding-default: 0.8rem;
 
 .job {
-    width: 90%;
-    margin-bottom: 2.4rem;
-    border: 2px solid;
-    padding: $box-padding-default $box-padding-default $box-padding-default $box-padding-left;
-    border-image:
-        linear-gradient(to bottom,
-            $color-peach, $color-yellow, ) 1 100%;
-    border-right: 0;
-    position: relative;
-    z-index: 1;
-    background-color: lighten($color-black, 2%);
-    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, .3);
-    transition: all 0.2s ease-in-out;
-    position: relative;
+  width: 90%;
+  margin-bottom: 2.4rem;
+  border: 2px solid;
+  padding: $box-padding-default $box-padding-default $box-padding-default
+    $box-padding-left;
+  border-image: linear-gradient(to bottom, $color-peach, $color-yellow) 1 100%;
+  border-right: 0;
+  position: relative;
+  z-index: 1;
+  background-color: lighten($color-black, 2%);
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out;
+  position: relative;
 
-    &:first-child {
-        margin-top: 1.5rem;
-    }
+  &:first-child {
+    margin-top: 1.5rem;
+  }
+
+  &::after {
+    display: block;
+    content: '';
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+
+  &:hover {
+    transform: translateY(-8px);
 
     &::after {
-        display: block;
-        content: '';
-        opacity: 0;
-        transition: opacity 0.2s ease-in-out;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, .2);
-
-    }
-
-    &:hover::after {
-        opacity: 1;
-    }
-
-    &:hover {
-        transform: translateY(-8px);
-
-        &::after {
-            opacity: 1;
-        }
-
-        .header {
-            color: $font-color-a-hover;
-        }
-    }
-
-    .box-link {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        z-index: 1;
+      opacity: 1;
     }
 
     .header {
-        letter-spacing: .06rem;
-        color: $font-color-a;
-        margin-top: 0;
-        font-size: .9rem;
-        font-weight: normal;
-        font-family: 'NotoSans', sans-serif;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: .5rem;
-        align-items: center;
+      color: $font-color-a-hover;
+    }
+  }
 
-        .company {
-            padding-right: .55rem;
-        }
+  .box-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .header {
+    letter-spacing: 0.06rem;
+    color: $font-color-a;
+    margin-top: 0;
+    font-size: 0.9rem;
+    font-weight: normal;
+    font-family: 'NotoSans', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    align-items: center;
+
+    .company {
+      padding-right: 0.55rem;
+    }
+  }
+
+  .title {
+    font-size: 0.85rem;
+  }
+
+  .dates {
+    margin-top: 0.2rem;
+    color: lighten($color-dark-teal, 35%);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+  }
+
+  ul.description {
+    font-family: 'NotoSans', sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    letter-spacing: 0.025rem;
+    width: 90%;
+    padding: 1rem 0;
+    list-style-position: inside;
+
+    li {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .skills {
+    margin: 0 -0.32rem;
+    font-size: 0.7rem;
+
+    .skill {
+      display: inline-block;
+      margin: 0.32rem;
+      padding: 0.25rem;
+      background-color: #31475b;
+      color: adjust-color($color-pink, $saturation: -40%);
+      border-radius: 5px;
+    }
+  }
+
+  @include for-tablet-down {
+    h2 {
+      border-bottom: none;
+    }
+  }
+
+  @include for-tablet-portrait-down {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0.2rem 0 0.2rem $box-padding-left;
+    margin-bottom: 3rem;
+
+    &:hover {
+      transform: none;
+      transition: 0;
     }
 
-    .title {
-        font-size: .85rem;
+    &:first-child {
+      margin-top: 2rem;
     }
 
-    .dates {
-        margin-top: .2rem;
-        color: lighten($color-dark-teal, 35%);
-        text-transform: uppercase;
-        font-size: .75rem;
+    &::after {
+      display: none;
+    }
+
+    .header {
+      justify-content: normal;
+      font-size: 1.05rem;
     }
 
     ul.description {
-        font-family: 'NotoSans', sans-serif;
-        font-size: .75rem;
-        line-height: 1.5;
-        letter-spacing: .025rem;
-        width: 90%;
-        padding: 1rem 0;
-        list-style-position: inside;
+      font-size: 0.8rem;
+      width: 95%;
+    }
+  }
 
-        li {
-            margin-bottom: 1rem;
-        }
+  @include for-mobile {
+    width: 100%;
+    margin-bottom: 3.5rem;
+    padding-left: 1rem;
 
+    .title {
+      font-size: 1rem;
+    }
+
+    ul.description {
+      font-size: 0.85rem;
+      width: 100%;
     }
 
     .skills {
-        margin: 0 -.32rem;
-        font-size: .7rem;
-
-        .skill {
-            display: inline-block;
-            margin: .32rem;
-            padding: .25rem;
-            background-color: #31475B;
-            color: adjust-color($color-pink, $saturation: -40%);
-            border-radius: 5px;
-        }
+      font-size: 0.85rem;
     }
-
-    @include for-tablet-portrait-down {
-        background-color: transparent;
-        box-shadow: none;
-        padding: .2rem 0 .2rem $box-padding-left;
-        margin-bottom: 3rem;
-
-        &:hover {
-            transform: none;
-        }
-
-        &:first-child {
-            margin-top: 2rem;
-        }
-
-        &::after {
-            display: none;
-        }
-
-        .header {
-            justify-content: normal;
-            font-size: 1.05rem;
-        }
-
-        ul.description {
-            font-size: .8rem;
-            width: 95%;
-        }
-    }
-
-    @include for-mobile {
-        width: 100%;
-        margin-bottom: 3.5rem;
-        padding-left: 1rem;
-
-        .title {
-            font-size: 1rem;
-        }
-
-        ul.description {
-            font-size: .85rem;
-            width: 100%;
-        }
-
-        .skills {
-            font-size: .85rem;
-        }
-    }
+  }
 }

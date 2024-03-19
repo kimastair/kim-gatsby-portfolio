@@ -1,11 +1,11 @@
-@import "../../styles/partials/core-imports";
+@import '../../styles/partials/core-imports';
 
 main.experience-page {
-    h1 {
-        margin-bottom: 2.5rem;
-    }
+  h1 {
+    margin-bottom: 2.5rem;
+  }
 
-    @include for-tablet-portrait-down {
-        margin-bottom: 4rem;
-    }
+  @include for-tablet-portrait-down {
+    margin-bottom: 4rem;
+  }
 }

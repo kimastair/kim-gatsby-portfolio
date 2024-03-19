@@ -1,37 +1,37 @@
-@import "../../../styles/partials/core-imports";
+@import '../../../styles/partials/core-imports';
 
 .page-wrapper {
-    max-width: 1920px;
-    margin: 0 auto;
+  max-width: 1920px;
+  margin: 0 auto;
 
+  main {
+    margin: 0 $page-left-right-spacing;
+    animation: fade-out 500ms forwards;
+  }
+
+  &.menu-open main,
+  &.menu-closing main {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @keyframes fade-out {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @include for-tablet-portrait-down {
     main {
-        margin: 0 $page-left-right-spacing;
-        animation: fade-out 500ms forwards;
+      margin: 0 $page-left-right-spacing-mobile;
     }
-
-    &.menu-open main,
-    &.menu-closing main {
-        display: none;
-    }
-
-    .nav {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    @keyframes fade-out {
-        0% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-
-    @include for-tablet-portrait-down {
-        main {
-            margin: 0 $page-left-right-spacing-mobile;
-        }
-    }
+  }
 }
