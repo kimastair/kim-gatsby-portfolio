@@ -1,17 +1,18 @@
-import * as React from "react"
-import CustomHead from "../components/global/CustomHead"
-import PageWrapper from "../components/global/PageWrapper"
-import Page from "../components/Experience"
-import "./../styles/site.scss"
+import * as React from 'react'
+import CustomHead from '../components/global/CustomHead'
+import PageWrapper from '../components/global/PageWrapper'
+import ExperiencePage from '../components/ExperiencePage'
+import './../styles/site.scss'
 
-const ExperiencePage = () => {
+// This component is used to wrap the experience page
+const ExperiencePageWrapper = () => {
   return (
     <PageWrapper>
-      <Page />
+      <ExperiencePage />
     </PageWrapper>
   )
 }
 
-export default ExperiencePage
+export default ExperiencePageWrapper
 
 export const Head = () => <CustomHead title="Experience | Kim Stair" />

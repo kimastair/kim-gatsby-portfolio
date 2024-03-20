@@ -1,9 +1,9 @@
 {
   "name": "kim-gatsby-portfolio",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "description": "Source code for https://kimstair.dev",
-  "author": "kim",
+  "author": "kimastair",
   "keywords": [
     "gatsby"
   ],
@@ -12,14 +12,18 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "lint": "eslint \"**/*.{js, jsx, json,}\""
+  },
+  "overrides": {
+    "react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825": {
+      "react": "^18.2.0"
+    }
   },
   "dependencies": {
     "@emotion/styled": "^11.11.0",
-    "@mui/icons-material": "^5.14.14",
-    "@visx/wordcloud": "^3.3.0",
-    "gatsby": "^5.11.0",
-    "gatsby-plugin-fix-fouc": "^1.0.5",
+    "@mui/icons-material": "^5.15.12",
+    "gatsby": "^5.13.3",
     "gatsby-plugin-google-gtag": "^5.11.0",
     "gatsby-plugin-image": "^3.13.0",
     "gatsby-plugin-manifest": "^5.11.0",
@@ -32,6 +36,14 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
-    "sass": "^1.65.1"
+    "sass": "^1.71.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-webpack-plugin": "^2.7.0",
+    "gatsby-plugin-eslint": "^4.0.4",
+    "prettier": "3.2.5"
   }
 }

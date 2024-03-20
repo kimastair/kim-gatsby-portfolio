@@ -1,16 +1,17 @@
-import * as React from "react"
-import CustomHead from "../components/global/CustomHead"
-import PageWrapper from "../components/global/PageWrapper"
-import Page from "../components/Contact"
+import * as React from 'react'
+import CustomHead from '../components/global/CustomHead'
+import PageWrapper from '../components/global/PageWrapper'
+import ContactPage from '../components/ContactPage'
 
-const contact = () => {
+// This component is used to wrap the contact page
+const ContactPageWrapper = () => {
   return (
     <PageWrapper>
-      <Page />
-    </PageWrapper >
+      <ContactPage />
+    </PageWrapper>
   )
 }
 
-export default contact
+export default ContactPageWrapper
 
 export const Head = () => <CustomHead title="Contact | Kim Stair" />

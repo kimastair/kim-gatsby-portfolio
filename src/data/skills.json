@@ -1,42 +1,42 @@
 [
-    {
-        "name": "HTML",
-        "years": 20
-    },
-    {
-        "name": "CSS",
-        "years": 17
-    },
-    {
-        "name": "React.js",
-        "years": 6
-    },
-    {
-        "name": "Git",
-        "years": 6
-    },
-    {
-        "name": "JavaScript",
-        "years": 18
-    },
-    {
-        "name": "CMS Customization",
-        "years": 10
-    },
-    {
-        "name": "Gatsby.js",
-        "years": 3
-    },
-    {
-        "name": "Agile",
-        "years": 9
-    },
-    {
-        "name": "FE team lead",
-        "years": 8
-    },
-    {
-        "name": "Design systems",
-        "years": 3
-    }
+  {
+    "name": "HTML",
+    "years": 20
+  },
+  {
+    "name": "CSS",
+    "years": 17
+  },
+  {
+    "name": "React.js",
+    "years": 6
+  },
+  {
+    "name": "Git",
+    "years": 6
+  },
+  {
+    "name": "JavaScript",
+    "years": 18
+  },
+  {
+    "name": "CMS Customization",
+    "years": 10
+  },
+  {
+    "name": "Gatsby.js",
+    "years": 3
+  },
+  {
+    "name": "Agile",
+    "years": 9
+  },
+  {
+    "name": "FE team lead",
+    "years": 8
+  },
+  {
+    "name": "Design systems",
+    "years": 3
+  }
 ]

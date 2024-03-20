@@ -1,0 +1,132 @@
+@import '../../styles/partials/core-imports';
+
+$bottom-spacing: 1.6rem;
+$left-col-width: 40%;
+$right-col-width: calc(100% - #{$left-col-width});
+
+main.index-page {
+  display: flex;
+  justify-content: space-between;
+
+  .left {
+    width: $left-col-width;
+    margin-right: 8.8rem;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    align-self: flex-start;
+    top: $header-height;
+
+    .flex-container {
+      height: calc(100vh - $header-height);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .welcome {
+      color: $font-color-header;
+      font-size: 3.2rem;
+      letter-spacing: 0.2rem;
+      line-height: 1.25;
+      white-space: nowrap;
+    }
+
+    .intro {
+      font-size: 1.2rem;
+
+      .resume-link {
+        margin-top: 1.6rem;
+      }
+    }
+
+    .img-container {
+      min-height: 0;
+      display: block;
+      background-color: $color-dark-teal;
+      border: 5px solid black;
+      max-width: 40vh;
+
+      .img-me {
+        min-height: 0;
+        display: flex;
+        max-height: 100%;
+        max-width: 80%;
+      }
+    }
+
+    a {
+      margin-top: 1.6rem;
+      margin-bottom: $bottom-spacing;
+    }
+  }
+
+  .right {
+    width: $right-col-width;
+    margin-bottom: $bottom-spacing + 0.4rem;
+
+    .experience-section {
+      margin-top: 2.4rem;
+    }
+  }
+
+  @media (min-width: $vp-desktop) and (max-height: 800px) {
+    .left {
+      .flex-container {
+        .img-container {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @include for-tablet-down {
+    margin-bottom: 2rem;
+    flex-direction: column;
+
+    .left,
+    .right {
+      width: 100%;
+    }
+
+    .left {
+      position: static;
+      display: flex;
+
+      .flex-container {
+        height: auto;
+
+        .intro {
+          width: 60%;
+        }
+
+        .img-container {
+          width: 40vh;
+        }
+      }
+    }
+  }
+
+  @include for-tablet-portrait-down {
+    .left {
+      .flex-container {
+        a {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  @include for-mobile {
+    .left {
+      .flex-container {
+        .intro {
+          width: 100%;
+        }
+
+        .img-container {
+          width: 90%;
+        }
+      }
+    }
+  }
+}

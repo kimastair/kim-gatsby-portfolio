@@ -1,17 +1,18 @@
-import * as React from "react"
-import CustomHead from "../components/global/CustomHead"
-import PageWrapper from "../components/global/PageWrapper"
-import Page from "../components/About"
-import "./../styles/site.scss"
+import * as React from 'react'
+import CustomHead from '../components/global/CustomHead'
+import PageWrapper from '../components/global/PageWrapper'
+import AboutPage from '../components/AboutPage'
+import './../styles/site.scss'
 
-const AboutPage = () => {
+// This component is used to wrap the about page
+const AboutPageWrapper = () => {
   return (
     <PageWrapper>
-      <Page />
+      <AboutPage />
     </PageWrapper>
   )
 }
 
-export default AboutPage
+export default AboutPageWrapper
 
 export const Head = () => <CustomHead title="About | Kim Stair" />

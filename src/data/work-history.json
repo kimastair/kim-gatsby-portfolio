@@ -1,181 +1,179 @@
 [
-    {
-        "title": "Software Engineer",
-        "company": "American Express",
-        "dates": {
-            "start": "Dec 2020",
-            "end": "Mar 2023"
-        },
-        "showOnHome": true,
-        "summary": [
-            "Supported the frontend team with onboarding, mentorship, code reviews, and product demos, ran weekly frontend syncs and group brainstorming sessions, detailed and tracked dozens of tech roadmap initiatives",
-            "Modernized and shipped new features in React on the American Express cardholder log-in landing page (50 million views/month) and the benefits dashboard page (3 million views/month) acting as a trusted advisor to product owners and graphic design teams"
-        ],
-        "description": [
-            "Supported the frontend team with onboarding, mentorship, code reviews, and product demos, ran weekly frontend syncs and group brainstorming sessions, detailed and tracked dozens of tech roadmap initiatives",
-            "Modernized and shipped new features in React on the American Express cardholder log-in landing page (50 million views/month) and the benefits dashboard page (3 million views/month) acting as a trusted advisor to product owners and graphic design teams",
-            "Implemented Storybook on multiple repos and championed its use across the company in organization-wide demos to solve pain points around documentation and viewing hard-to-reach logged-in user scenarios, building an innovative Storybook plug-in custom-tailored for working with Amex proprietary tech",
-            "Worked with backend, product design, and product owner teams to consolidate over 20 discrete API benefit progress notifiers into a single frontend module"
-        ],
-        "urls": {
-            "anchor": "amex",
-            "external": "https://global.americanexpress.com/card-benefits/view-all/platinum"
-        },
-        "skills": [
-            "React.js",
-            "Storybook",
-            "SCSS",
-            "Git",
-            "Jenkins",
-            "Jest",
-            "Adobe Analytics",
-            "InVision",
-            "Agile",
-            "A11y: WCAG 2 Level AA"
-        ]
+  {
+    "title": "Software Engineer",
+    "company": "American Express",
+    "dates": {
+      "start": "Dec 2020",
+      "end": "Mar 2023"
     },
-    {
-        "title": "Senior UX Engineer",
-        "company": "Microsoft: Xbox Game Dev",
-        "dates": {
-            "start": "Jan 2019",
-            "end": "Dec 2020"
-        },
-        "showOnHome": true,
-        "summary": [
-            "Led the frontend team in an innovative greenfield project for a new game developer marketing initiative at Microsoft Xbox shipping a game-centric site with a modern, unique, and highly animated graphic design",
-            "Leveraged ReactJS, Gatsby, MS Flow + Azure to create a seamless custom automated SharePoint authoring experience and build system for the marketing team to publish list items to staging and production"
-        ],
-        "description": [
-            "Led the frontend team in an innovative greenfield project for a new game developer marketing initiative at Microsoft Xbox shipping a game-centric site with a modern, unique, and highly animated graphic design",
-            "Leveraged ReactJS, Gatsby, MS Flow + Azure to create a seamless custom automated SharePoint authoring experience and build system for the marketing team to publish list items to staging and production",
-            "Created best practices, managed accessibility and privacy compliance, working closely with design and product teams for feature development",
-            "Worked with a small team of frontend engineers to review prototypes, create requirements, and articulate roadmap initiatives for the Xbox Design System component library"
-        ],
-        "urls": {
-            "anchor": "msxbox",
-            "external": "https://developer.microsoft.com/en-us/games/"
-        },
-        "skills": [
-            "React.js",
-            "Gatsby.js",
-            "Hugo.js",
-            "SCSS",
-            "Git",
-            "Azure DevOps",
-            "Design systems",
-            "GraphQL",
-            "Sketch",
-            "Dynamics 365",
-            "Optimizely",
-            "Agile",
-            "Adobe Analytics",
-            "A11y: WCAG 2 Level AA"
-        ]
+    "summary": [
+      "Supported the frontend team with onboarding, mentorship, code reviews, and product demos, ran weekly frontend syncs and group brainstorming sessions, detailed and tracked dozens of tech roadmap initiatives",
+      "Modernized and shipped new features in React on the American Express cardholder log-in landing page (50 million views/month) and the benefits dashboard page (3 million views/month) acting as a trusted advisor to product owners and graphic design teams"
+    ],
+    "description": [
+      "Supported the frontend team with onboarding, mentorship, code reviews, and product demos, ran weekly frontend syncs and group brainstorming sessions, detailed and tracked dozens of tech roadmap initiatives",
+      "Modernized and shipped new features in React on the American Express cardholder log-in landing page (50 million views/month) and the benefits dashboard page (3 million views/month) acting as a trusted advisor to product owners and graphic design teams",
+      "Implemented Storybook on multiple repos and championed its use across the company in organization-wide demos to solve pain points around documentation and viewing hard-to-reach logged-in user scenarios, building an innovative Storybook plug-in custom-tailored for working with Amex proprietary tech",
+      "Worked with backend, product design, and product owner teams to consolidate over 20 discrete API benefit progress notifiers into a single frontend module"
+    ],
+    "urls": {
+      "anchor": "amex",
+      "external": "https://global.americanexpress.com/card-benefits/view-all/platinum"
     },
-    {
-        "title": "Frontend Software Engineer",
-        "company": "HomeAway (VRBO)",
-        "dates": {
-            "start": "May 2017",
-            "end": "Dec 2017"
-        },
-        "description": [
-            "Built an urgently needed single-page application with React.js in under 2 months to populate legal forms for HomeAway hosts to continue providing short-term rentals to travelers legally",
-            "Owned visual design implementation, frontend feature development, application support, working closely with multiple teams to quickly integrate our new pages into the larger site - winning a company award for outstanding cross-team collaboration",
-            "Developed a component-driven configuration system to query for requirements and render dynamic (JSON generated) output of different versions of the forms based upon the user's district to be rolled out worldwide for hundreds of districts",
-            "Worked with product management, design, and developer teams in an Agile environment, leading frontend efforts in the troubleshooting and resolution of production issues and the release of new features"
-        ],
-        "urls": {
-            "anchor": "homeaway",
-            "external": "https://homeaway.com"
-        },
-        "skills": [
-            "React.js",
-            "SCSS",
-            "Git",
-            "JavaScript",
-            "HTML",
-            "Design systems",
-            "Jenkins",
-            "InVision",
-            "Agile"
-        ]
+    "skills": [
+      "React.js",
+      "Storybook",
+      "SCSS",
+      "Git",
+      "Jenkins",
+      "Jest",
+      "Adobe Analytics",
+      "InVision",
+      "Agile",
+      "A11y: WCAG 2 Level AA"
+    ]
+  },
+  {
+    "title": "Senior UX Engineer",
+    "company": "Microsoft: Xbox Game Dev",
+    "dates": {
+      "start": "Jan 2019",
+      "end": "Dec 2020"
     },
-    {
-        "title": "UX Engineer",
-        "company": "Microsoft Apps: Dev Center",
-        "dates": {
-            "start": "Oct 2014",
-            "end": "Nov 2016"
-        },
-        "description": [
-            "Co-created and documented a Bootstrap-based design system to align with Microsoft graphic design guidelines as an effort to centralize all http://microsoft.com styling into a single codebase to be used across hundreds of pages",
-            "Managed the shipping of all frontend code changes for the massive and complex Windows App Store developer workflow during a redesign and migration from ASP.NET to Angular",
-            "Supported a team of 5+ designers and 20+ engineers as an individual contributor and frontend development trainer through documentation and code reviews, exercising immense attention to detail and powers of persuasion to ensure all UX conformed to UI design expectations and followed best practices for web semantics, accessibility, and graceful localization"
-        ],
-        "urls": {
-            "anchor": "msappdev",
-            "external": "https://developer.microsoft.com/en-us/microsoft-store"
-        },
-        "skills": [
-            "Angular.js",
-            "ASP.NET MVC",
-            "C#",
-            "LESS",
-            "Git",
-            "Agile",
-            "A11y: WCAG 2 Level AA"
-        ]
+    "summary": [
+      "Led the frontend team in an innovative greenfield project for a new game developer marketing initiative at Microsoft Xbox shipping a game-centric site with a modern, unique, and highly animated graphic design",
+      "Leveraged ReactJS, Gatsby, MS Flow + Azure to create a seamless custom automated SharePoint authoring experience and build system for the marketing team to publish list items to staging and production"
+    ],
+    "description": [
+      "Led the frontend team in an innovative greenfield project for a new game developer marketing initiative at Microsoft Xbox shipping a game-centric site with a modern, unique, and highly animated graphic design",
+      "Leveraged ReactJS, Gatsby, MS Flow + Azure to create a seamless custom automated SharePoint authoring experience and build system for the marketing team to publish list items to staging and production",
+      "Created best practices, managed accessibility and privacy compliance, working closely with design and product teams for feature development",
+      "Worked with a small team of frontend engineers to review prototypes, create requirements, and articulate roadmap initiatives for the Xbox Design System component library"
+    ],
+    "urls": {
+      "anchor": "msxbox",
+      "external": "https://developer.microsoft.com/en-us/games/"
     },
-    {
-        "title": "Frontend Web Developer",
-        "company": "SMITH",
-        "dates": {
-            "start": "Sep 2006",
-            "end": "Sep 2014"
-        },
-        "description": [
-            "Specialized in radical visual design customizations to default SharePoint page output for public-facing sites",
-            "Created and maintained a wide range of projects for agency clients, including Microsoft, Gates Foundation, Expedia, and Hawaii Department of Education, leading frontend development on all new projects in the last three years of my role",
-            "Collaborated with visual design, business intelligence, and user research experts to brainstorm feature development"
-        ],
-        "urls": {
-            "anchor": "smith",
-            "external": "https://smithcommerce.com/"
-        },
-        "skills": [
-            "HTML",
-            "CSS",
-            "Javascript",
-            "C#",
-            "Adobe Photoshop",
-            "SharePoint Development"
-        ]
+    "skills": [
+      "React.js",
+      "Gatsby.js",
+      "Hugo.js",
+      "SCSS",
+      "Git",
+      "Azure DevOps",
+      "Design systems",
+      "GraphQL",
+      "Sketch",
+      "Dynamics 365",
+      "Optimizely",
+      "Agile",
+      "Adobe Analytics",
+      "A11y: WCAG 2 Level AA"
+    ]
+  },
+  {
+    "title": "Frontend Software Engineer",
+    "company": "HomeAway (VRBO)",
+    "dates": {
+      "start": "May 2017",
+      "end": "Dec 2017"
     },
-    {
-        "title": "Web Developer/Automation Engineer",
-        "company": "LTC Financial Partners",
-        "dates": {
-            "start": "Sep 2003",
-            "end": "Sep 2006"
-        },
-        "description": [
-            "Automated business processes with MS Office/VBA scripting saving onboarders and admin staff hundreds of hours",
-            "Maintained the sales staff onboarding website and marketing website",
-            "Repaired and maintained all office computers",
-            "Fielded all technical questions from our team of ~100 sales staff"
-        ],
-        "urls": {
-            "anchor": "ltcfp",
-            "external": "https://www.ltcfp.com/"
-        },
-        "skills": [
-            "ASP.NET",
-            "JavaScript",
-            "HTML",
-            "Microsoft SQL Server",
-            "Visual Basic for Applications (VBA)"
-        ]
-    }
+    "description": [
+      "Built an urgently needed single-page application with React.js in under 2 months to populate legal forms for HomeAway hosts to continue providing short-term rentals to travelers legally",
+      "Owned visual design implementation, frontend feature development, application support, working closely with multiple teams to quickly integrate our new pages into the larger site - winning a company award for outstanding cross-team collaboration",
+      "Developed a component-driven configuration system to query for requirements and render dynamic (JSON generated) output of different versions of the forms based upon the user's district to be rolled out worldwide for hundreds of districts",
+      "Worked with product management, design, and developer teams in an Agile environment, leading frontend efforts in the troubleshooting and resolution of production issues and the release of new features"
+    ],
+    "urls": {
+      "anchor": "homeaway",
+      "external": "https://homeaway.com"
+    },
+    "skills": [
+      "React.js",
+      "SCSS",
+      "Git",
+      "JavaScript",
+      "HTML",
+      "Jenkins",
+      "InVision",
+      "Agile"
+    ]
+  },
+  {
+    "title": "UX Engineer",
+    "company": "Microsoft Apps: Dev Center",
+    "dates": {
+      "start": "Oct 2014",
+      "end": "Nov 2016"
+    },
+    "description": [
+      "Co-created and documented a Bootstrap-based design system to align with Microsoft graphic design guidelines as an effort to centralize all http://microsoft.com styling into a single codebase to be used across hundreds of pages",
+      "Managed the shipping of all frontend code changes for the massive and complex Windows App Store developer workflow during a redesign and migration from ASP.NET to Angular",
+      "Supported a team of 5+ designers and 20+ engineers as an individual contributor and frontend development trainer through documentation and code reviews, exercising immense attention to detail and powers of persuasion to ensure all UX conformed to UI design expectations and followed best practices for web semantics, accessibility, and graceful localization"
+    ],
+    "urls": {
+      "anchor": "msappdev",
+      "external": "https://developer.microsoft.com/en-us/microsoft-store"
+    },
+    "skills": [
+      "Angular.js",
+      "ASP.NET MVC",
+      "C#",
+      "Design systems",
+      "LESS",
+      "Git",
+      "Agile",
+      "A11y: WCAG 2 Level AA"
+    ]
+  },
+  {
+    "title": "Frontend Web Developer",
+    "company": "SMITH",
+    "dates": {
+      "start": "Sep 2006",
+      "end": "Sep 2014"
+    },
+    "description": [
+      "Specialized in radical visual design customizations to default SharePoint page output for public-facing sites",
+      "Created and maintained a wide range of projects for agency clients, including Microsoft, Gates Foundation, Expedia, and Hawaii Department of Education, leading frontend development on all new projects in the last three years of my role",
+      "Collaborated with visual design, business intelligence, and user research experts to brainstorm feature development"
+    ],
+    "urls": {
+      "anchor": "smith",
+      "external": "https://smithcommerce.com/"
+    },
+    "skills": [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "C#",
+      "Adobe Photoshop",
+      "SharePoint Development"
+    ]
+  },
+  {
+    "title": "Web Developer/Automation Engineer",
+    "company": "LTC Financial Partners",
+    "dates": {
+      "start": "Sep 2003",
+      "end": "Sep 2006"
+    },
+    "description": [
+      "Automated business processes with MS Office/VBA scripting saving onboarders and admin staff hundreds of hours",
+      "Maintained the sales staff onboarding website and marketing website",
+      "Repaired and maintained all office computers",
+      "Fielded all technical questions from our team of ~100 sales staff"
+    ],
+    "urls": {
+      "anchor": "ltcfp",
+      "external": "https://www.ltcfp.com/"
+    },
+    "skills": [
+      "ASP.NET",
+      "JavaScript",
+      "HTML",
+      "Microsoft SQL Server",
+      "Visual Basic for Applications (VBA)"
+    ]
+  }
 ]
