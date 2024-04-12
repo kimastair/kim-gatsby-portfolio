@@ -1,12 +1,10 @@
 import React from 'react'
-import skills from '../../../../data/skills.json'
+import skills from '@/data/skills.json'
 import './skill-bars.scss'
 
 // This component is used to display a list of skills and years of experience in a consistent format
-const SkillBars = () => {
-  const sortedSkills = skills.sort((a, b) => {
-    return b.years - a.years
-  })
+const SkillBars = (): JSX.Element => {
+  const sortedSkills = skills.sort((a, b) => b.years - a.years)
   const maxYearExperience = sortedSkills[0].years
   // const minYearExperience = sortedSkills[sortedSkills.length - 1].years
   return (

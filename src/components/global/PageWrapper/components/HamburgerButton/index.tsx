@@ -1,9 +1,14 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { MenuStateType } from 'types/app'
 import './hamburger-button.scss'
 
+interface Props {
+  menuState: MenuStateType
+  toggleMenu: () => void
+}
+
 // This component is used to display a hamburger button for mobile navigation
-const HamburgerButton = ({ menuState, toggleMenu }) => (
+const HamburgerButton: React.FC<Props> = ({ menuState, toggleMenu }) => (
   <button
     className={`hamburger-button ${menuState}`}
     onClick={() => toggleMenu()}
@@ -19,10 +24,5 @@ const HamburgerButton = ({ menuState, toggleMenu }) => (
     <span></span>
   </button>
 )
-
-HamburgerButton.propTypes = {
-  menuState: PropTypes.string.isRequired,
-  toggleMenu: PropTypes.func.isRequired,
-}
 
 export default HamburgerButton
