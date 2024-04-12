@@ -3,12 +3,16 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ['plugin:react/recommended'],
+  extends: [
+    'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
+  ],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 12,
+    ecmaVersion: 2020,
     sourceType: 'module',
   },
   ignorePatterns: ['node_modules', '.cache', 'public'],
@@ -20,6 +24,7 @@ module.exports = {
   },
   rules: {
     // My rules
+    'arrow-body-style': ['warn', 'as-needed'],
     'react/destructuring-assignment': ['warn', 'always'],
     'react/function-component-definition': [
       'warn',
@@ -28,8 +33,8 @@ module.exports = {
       },
     ],
     'react/no-unescaped-entities': 'off',
+    'react/jsx-no-useless-fragment': ['warn', { allowExpressions: true }],
     'react/display-name': 'warn',
-    'react/prop-types': 'warn',
     // Gatsby rules
     // Below comment copied from Gatsby eslintrc.js:
     // New versions of react use a special jsx runtime that remove the requirement
