@@ -1,6 +1,6 @@
-# Source for [https://kimstair.dev](https://kimstair.dev)
+## Source for [https://kimstair.dev](https://kimstair.dev)
 
-## Usage requirements: Feel free to clone or fork this project for learning or ideas on building your own Gatsby portfolio. If you deploy code that is largely made up of my code, please disclose the source and attribute me by adding a link to my site. Thanks!
+Usage requirements: Feel free to clone or fork this project for learning or ideas on building your own Gatsby portfolio. If you deploy code that is largely made up of my code, please disclose the source and attribute me by adding a link to my site. Thanks!
 
 ## 🛠 Installation & Set Up
 
