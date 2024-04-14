@@ -3,17 +3,19 @@ import { navigate } from 'gatsby'
 import './contact-page.scss'
 
 // This component is used to display a contact form
-const ContactPage = () => {
-  const handleSubmit = (event) => {
+const ContactPage = (): JSX.Element => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
 
-    const myForm = event.target
+    const myForm = event.target as HTMLFormElement
     const formData = new FormData(myForm)
 
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(formData).toString(),
+      body: new URLSearchParams(
+        formData as unknown as Record<string, string>
+      ).toString(),
     })
       .then(() => navigate('/success'))
       .catch((error) => alert(error))
@@ -58,7 +60,7 @@ const ContactPage = () => {
               <textarea
                 name="message"
                 id="message"
-                rows="5"
+                rows={5}
                 autoComplete="off"
               />
             </label>

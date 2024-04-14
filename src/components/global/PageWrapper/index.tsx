@@ -1,16 +1,20 @@
 import React, { StrictMode, useState } from 'react'
-import PropTypes from 'prop-types'
+import { MenuStateType } from '@/types/app'
 import './page-wrapper.scss'
 import Header from './components/Header'
 import Menu from './components/Menu'
+import '@/styles/site.scss'
+
+type Props = {
+  children: React.ReactNode
+}
 
 // This component is used to wrap the entire page and manage the mobile navigation menu
-const PageWrapper = ({ children }) => {
+const PageWrapper: React.FC<Props> = ({ children }) => {
   // set menu state for "open", "opening", "closing", "closed"
-  // to support both CSS opacity transitionas and a11y non-focus on hidden page elements
-  const [menuState, setMenuState] = useState('closed')
+  const [menuState, setMenuState] = useState<MenuStateType>('closed')
 
-  const toggleMenu = (closeMenuOnly) => {
+  const toggleMenu = (closeMenuOnly = false): void => {
     if (menuState === 'closed' && !closeMenuOnly) {
       setMenuState('opening')
       setTimeout(() => {
@@ -33,10 +37,6 @@ const PageWrapper = ({ children }) => {
       </div>
     </StrictMode>
   )
-}
-
-PageWrapper.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default PageWrapper

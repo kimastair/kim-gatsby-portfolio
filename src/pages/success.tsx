@@ -3,7 +3,7 @@ import CustomHead from '../components/global/CustomHead'
 import PageWrapper from '../components/global/PageWrapper'
 
 // This component is used to display a success message after the contact form is submitted
-const Success = () => {
+const Success = (): JSX.Element => {
   const [timeLeft, setTimeLeft] = useState(3)
 
   useEffect(() => {
@@ -38,4 +38,6 @@ const Success = () => {
 
 export default Success
 
-export const Head = () => <CustomHead title="Thank you | Kim Stair" />
+export const Head = (): JSX.Element => (
+  <CustomHead title="Thank you | Kim Stair" />
+)
